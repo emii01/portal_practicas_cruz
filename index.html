@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de prácticas – Salta</title>
+</head>
+<body>
+    <nav>
+    <ul style="list-style-type: none;">
+        <li><a href="#institucion">Institución</a></li>
+        <li><a href="#plan">Plan de estudios</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#registro">Registro</a></li>
+    </ul>
+    </nav>
+    <section id="institucion">
+
+    <h1>Portal de Prácticas Profesionalizantes</h1>
+
+    <h2>Instituto Superior del Milagro</h2>
+
+    <h3>Carrera Analista de Sistemas</h3>
+
+    <p>
+        Este portal permite gestionar las prácticas profesionalizantes
+        de los estudiantes de la carrera de Analista de Sistemas.
+    </p>
+
+    <p>
+        Los alumnos desarrollan conocimientos sobre
+        <strong>análisis de sistemas</strong>,
+        <strong>bases de datos</strong> y
+        <em>desarrollo web</em>.
+    </p>
+    </section>
+    <section>
+
+    <h2>Tecnologías utilizadas</h2>
+
+    <dl>
+        <dt>Python</dt>
+        <dd>Lenguaje utilizado para backend y automatización.</dd>
+
+        <dt>HTML5</dt>
+        <dd>Lenguaje de marcado para crear páginas web.</dd>
+
+        <dt>SQL</dt>
+        <dd>Lenguaje utilizado para bases de datos relacionales.</dd>
+    </dl>
+
+    </section>
+    <section id="plan">
+
+        <h2>Plan de Estudios</h2>
+
+        <table border="1">
+
+            <caption>Materias del semestre</caption>
+
+            <thead>
+                <tr>
+                    <th>Materia</th>
+                    <th>Profesor</th>
+                    <th>Carga Horaria</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Análisis de Sistemas</td>
+                    <td>Gómez</td>
+                    <td>6 hs</td>
+                </tr>
+
+                <tr>
+                    <td>Programación</td>
+                    <td>Pérez</td>
+                    <td>8 hs</td>
+                </tr>
+
+                <tr>
+                    <td>Base de Datos</td>
+                    <td>Fernández</td>
+                    <td>4 hs</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </section>
+    <section>
+
+    <h2>Pasos para inscribirse</h2>
+
+    <ol reversed>
+        <li>Enviar la documentación</li>
+        <li>Completar el formulario</li>
+        <li>Seleccionar empresa</li>
+        <li>Consultar requisitos</li>
+        <li>Ingresar al portal</li>
+    </ol>
+
+    </section>
+    <section id="multimedia">
+
+        <h2>Multimedia</h2>
+
+        <img src="logo.png"
+            alt="Logo institucional"
+            width="300"
+            height="200"
+            loading="lazy">
+
+    </section>
+    <video controls muted poster="logo.png" width="400">
+
+    <source src="video.mp4" type="video/mp4">
+    </video>
+    <audio controls preload="none">
+
+        <source src="audio.mp3" type="audio/mpeg">
+
+    </audio>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.13511753043!2d-65.414652!3d-24.7908264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a5250854c3%3A0x5e011d79c98af233!2sInstituto%20Superior%20del%20Milagro%20N%C2%B0%208207!5e0!3m2!1ses-419!2sar!4v1779233981518!5m2!1ses-419!2sar"
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <section id="registro">
+
+    <h2>Registro</h2>
+
+    <form method="POST">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <br><br>
+
+        <label for="dni">DNI:</label>
+        <input type="number" id="dni" name="dni" maxlength="8">
+
+        <br><br>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo">
+
+        <br><br>
+
+        <label for="turno">Turno:</label>
+
+        <select id="turno" name="turno">
+
+            <option disabled selected>
+                Seleccione un turno
+            </option>
+
+            <option>Tarde</option>
+            <option>Noche</option>
+
+        </select>
+
+        <br><br>
+
+        <p>Sede:</p>
+
+        <input type="radio" id="salta" name="sede">
+        <label for="salta">Salta Capital</label>
+
+
+        <br><br>
+
+        <p>Tecnologías de interés:</p>
+
+        <input type="checkbox" id="python" checked>
+        <label for="python">Python</label>
+
+        <input type="checkbox" id="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="sql">
+        <label for="sql">SQL</label>
+
+        <input type="checkbox" id="java">
+        <label for="java">Java</label>
+
+        <br><br>
+
+        <label for="comentarios">
+            Comentarios adicionales:
+        </label>
+
+        <br>
+
+        <textarea id="comentarios"
+                name="comentarios"
+                rows="5"
+                cols="40">
+        </textarea>
+
+        <br><br>
+
+        <button type="submit">
+            Enviar
+        </button>
+
+    </form>
+
+</section>
+
+
+</body>
+</html>
